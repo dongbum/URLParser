@@ -5,7 +5,7 @@
 class URLParserFunction
 {
 public:
-	static bool FindKeyword(const std::string input_url, size_t& st, int& before, const std::string delim, std::string& result)
+	static bool FindKeyword(const std::string& input_url, size_t& st, int& before, const std::string& delim, std::string& result)
 	{
 		char temp[1024] = { 0, };
 		size_t temp_st = st;
@@ -28,7 +28,7 @@ public:
 		return true;
 	};
 
-	static bool SplitQueryString(const std::string str, const std::string delim, std::string& key, std::string& value)
+	static bool SplitQueryString(const std::string& str, const std::string& delim, std::string& key, std::string& value)
 	{
 		char first[1024] = { 0, };
 		char second[1024] = { 0, };
