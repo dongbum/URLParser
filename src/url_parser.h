@@ -26,7 +26,7 @@ public:
 	};
 
 public:
-	static HTTP_URL Parse(const std::string input_url)
+	static HTTP_URL Parse(const std::string& input_url)
 	{
 		HTTP_URL http_url;
 
