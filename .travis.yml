@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+- gcc
+os:
+- linux
+script:
+- g++ example/example.cpp -std=c++11 -o urlparser_example
+- ./urlparser_example
