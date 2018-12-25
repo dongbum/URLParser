@@ -3,3 +3,6 @@ compiler:
 - gcc
 os:
 - linux
+script:
+- g++ src/url_parser.h -o url_parser_test
+- ./url_parser_test
