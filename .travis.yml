@@ -4,5 +4,5 @@ compiler:
 os:
 - linux
 script:
-- g++ src/url_parser.h -o url_parser_test
+- g++ src/url_parser.h -std=c++11 -o url_parser_test
 - ./url_parser_test
