@@ -32,13 +32,13 @@ public:
 		HTTP_URL http_url;
 
 		size_t st = 0;
-		int before = 0;
+		size_t before = 0;
 
 		URLParserFunction::FindKeyword(input_url, st, before, "://", http_url.scheme);
 		URLParserFunction::FindKeyword(input_url, st, before, "/", http_url.host);
 
 		size_t temp_st = 0;
-		int temp_before = 0;
+		size_t temp_before = 0;
 		std::string temp_ip;
 		std::string temp_port;
 
