@@ -6,7 +6,7 @@
 class URLParserFunction
 {
 public:
-	static bool FindKeyword(const std::string& input_url, size_t& st, int& before, const std::string& delim, std::string& result)
+	static bool FindKeyword(const std::string& input_url, size_t& st, size_t& before, const std::string& delim, std::string& result)
 	{
 		char temp[1024] = { 0, };
 		size_t temp_st = st;
