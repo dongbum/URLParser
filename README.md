@@ -1,5 +1,6 @@
 # URLParser
 [![Build Status](https://travis-ci.com/dongbum/URLParser.svg?branch=master)](https://travis-ci.com/dongbum/URLParser)
+[![Build status](https://ci.appveyor.com/api/projects/status/6lpcxnsf7uor15sw?svg=true)](https://ci.appveyor.com/project/dongbum/urlparser)
 
 Very easy and simple URL parser for C++.
 
