@@ -6,7 +6,7 @@ before_install:
 os:
 - linux
 script:
-- g++ example/example.cpp -std=c++11 -o urlparser_example
+- g++ example/example.cpp --coverage -std=c++11 -o urlparser_example
 - ./urlparser_example
 after_success:
 - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
