@@ -1,12 +1,24 @@
 language: cpp
+
 compiler:
 - gcc
-before_install:
-- pip install --user cpp-coveralls
+
 os:
 - linux
+
+dist: bionic
+
+before_install:
+- pip install --user cpp-coveralls
+
+env:
+  global:
+  - MAKEFLAGS="-j 2"
+
 script:
-- g++ example/example.cpp --coverage -std=c++11 -o urlparser_example
-- ./urlparser_example
+- cmake CMakeLists.txt
+- make
+- ./URLParser_example
+
 after_success:
-- coveralls --exclude lib --exclude tests --gcov-options '\-lp'
+- coveralls --exclude CMakeFiles --gcov-options '\-lp'
