@@ -2,6 +2,8 @@ CMAKE_MINIMUM_REQUIRED ( VERSION 3.10 )
 
 PROJECT ( "URLParser" )
 
+SET ( CMAKE_C_COMPILER "g++" )
+
 SET ( GCC_COVERAGE_COMPILE_FLAGS "-g -coverage -fprofile-arcs -ftest-coverage" )
 SET ( GCC_COVERAGE_LINK_FLAGS "-coverage -lgcov" )
 SET ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
@@ -14,6 +16,16 @@ SET ( URLPARSER_OUTPUT "URLParser_example" )
 
 SET ( URLPARSER_SRC_FILES
 	example/example.cpp
+	)
+
+LINK_LIBRARIES (
+	gcov
+	)
+
+ADD_COMPILE_OPTIONS (
+	-g
+	-std=c++11
+	--coverage
 	)
 
 ADD_EXECUTABLE ( ${URLPARSER_OUTPUT} ${URLPARSER_SRC_FILES} )
