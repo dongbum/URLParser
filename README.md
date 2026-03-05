@@ -1,7 +1,6 @@
 # URLParser
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dongbum/URLParser/blob/master/LICENSE)
 [![Build status](https://ci.appveyor.com/api/projects/status/6lpcxnsf7uor15sw?svg=true)](https://ci.appveyor.com/project/dongbum/urlparser)
-[![Coverage Status](https://coveralls.io/repos/github/dongbum/URLParser/badge.svg?branch=master)](https://coveralls.io/github/dongbum/URLParser?branch=master)
 
 Very easy and simple URL parser for C++.
 
